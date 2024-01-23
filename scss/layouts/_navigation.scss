@@ -1,0 +1,91 @@
+@use "../base" as *;
+.nav {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  &-items {
+    display: flex;
+    gap: 60px;
+
+    &:not(:last-child) {
+      border-right: 5px solid black;
+    }
+  }
+  &-list {
+    display: flex;
+    gap: 30px;
+    padding-right: 50px;
+    border-right: 3px solid $primary;
+
+    & li {
+      list-style: none;
+    }
+    & li a {
+      text-decoration: none;
+    }
+  }
+
+  &-currency {
+    background-color: aquamarine;
+  }
+}
+
+.search {
+  display: flex;
+  justify-content: space-between;
+  &-logo {
+    & img {
+      width: 176px;
+      height: 98px;
+    }
+  }
+  &-query {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+  }
+
+  &-input-box {
+    border-radius: 20px;
+    height: 45px;
+    width: 315px;
+    border: 2px solid $primary;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    & input {
+      border: none;
+    }
+  }
+
+  &-call {
+    display: flex;
+    gap: 10px;
+  }
+  &-popups {
+    display: flex;
+    flex: 1;
+    gap: 30px;
+  }
+}
+
+.navbar {
+  padding-inline: 210px;
+  background-color: $primary;
+  padding-block: 10px;
+  &-items {
+    display: flex;
+    gap: 30px;
+
+    &:not(:last-child):after {
+    }
+
+    & li {
+      list-style: none;
+    }
+  }
+}

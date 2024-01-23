@@ -1,0 +1,104 @@
+@use "../base/" as *;
+.hero {
+  margin-top: 20px;
+  display: flex;
+  gap: 20px;
+
+  &-category {
+    width: 25%;
+    border: 1px solid $primary;
+    text-align: center;
+    border-radius: 10px;
+    // justify-content: space-between;
+    // padding-inline: 30px;
+
+    &_title {
+      padding: 20px;
+      background-color: $primary;
+    }
+
+    &_lists {
+      margin-inline: 10px;
+    }
+
+    &_list {
+      padding: 10px;
+      //   background-color: #000;
+      margin-bottom: 20px;
+
+      &-item {
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 1px solid $primary;
+        padding-block: 15px;
+        gap: 10px;
+        align-items: center;
+      }
+    }
+
+    &_btn {
+      background-color: $primary;
+      outline: none;
+      border: none;
+      width: 100%;
+      padding-block: 30px;
+      margin-bottom: 20px;
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
+
+  &-ad {
+    width: 75%;
+    background-color: blanchedalmond;
+
+    &-top {
+      background-color: $primary;
+      border-radius: 20px;
+      display: flex;
+      justify-content: space-between;
+      padding-left: 70px;
+      align-items: center;
+      margin-bottom: 20px;
+
+      &-box {
+        // background-color: aquamarine;
+      }
+
+      &-text {
+        margin-bottom: 10px;
+      }
+
+      &-btn {
+        display: flex;
+        gap: 20px;
+        align-items: center;
+      }
+    }
+
+    &-bottom {
+      display: flex;
+      justify-content: center;
+      align-items: stretch;
+      height: 120px;
+      gap: 20px;
+      // max-height: 100%;
+
+      &-ad {
+        background-color: transparent;
+        border: 1px solid $primary;
+        border-radius: 10px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 20px;
+        // flex-basis: 100%;
+        width: 100%;
+        // height: 106px;
+        // height: 100%;
+        align-items: center;
+        // padding: 32px 0;
+      }
+    }
+  }
+}

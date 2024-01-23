@@ -1,0 +1,56 @@
+@use "../base/" as *;
+.flash-sale {
+  margin-top: 50px;
+  &_title-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid $primary;
+    margin-bottom: 20px;
+
+    &-pro {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      & h3 {
+        padding: 22px 40px;
+        background-color: $primary;
+        height: 100%;
+        color: #fff;
+      }
+
+      & p {
+        color: $primary;
+        font-size: 18px;
+      }
+
+      &-nums {
+        display: flex;
+        position: relative;
+      }
+
+      &-num {
+        background-color: $primary;
+        padding: 5px;
+        border-radius: 10px;
+        margin-right: 10px;
+        &::after {
+          content: ":";
+        }
+      }
+    }
+
+    &-btn {
+      border: none;
+      background-color: aquamarine;
+      padding: 20px 40px;
+    }
+  }
+
+  &_product-box {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}

@@ -1,0 +1,24 @@
+@use "../base/" as *;
+
+.btn {
+  &-black {
+    padding: 10px 25px;
+    border: none;
+    background-color: #000;
+    color: $white;
+    text-transform: uppercase;
+  }
+  &-coupon {
+    padding: 5px 10px;
+    border: none;
+    background-color: $white;
+    rotate: -10deg;
+  }
+
+  &-more {
+    padding: 22px 40px;
+    background-color: transparent;
+    border-inline-start: 1px solid $primary;
+    outline: line;
+  }
+}
