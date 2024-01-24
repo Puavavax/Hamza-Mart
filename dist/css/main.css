@@ -94,7 +94,7 @@ p {
 }
 
 .flash-sale {
-  margin-top: 50px;
+  margin-block: 100px;
 }
 .flash-sale_title-box {
   display: flex;
@@ -140,6 +140,33 @@ p {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.featured {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.featured > button {
+  margin-bottom: 20px;
+}
+.featured .c {
+  align-self: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
+}
+
+.category-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 20px;
 }
 
 .hero {
@@ -239,7 +266,18 @@ p {
   padding: 22px 40px;
   background-color: transparent;
   border-inline-start: 1px solid #ff9900;
-  outline: line;
+  border: none;
+  border: 1px solid #ff9900;
+  color: #ff9900;
+}
+.btn-banner {
+  padding: 20px 40px;
+  background-color: #ff9900;
+  border: none;
+  color: white;
+  font-size: 24px;
+  min-width: -moz-min-content;
+  min-width: min-content;
 }
 
 .card {
@@ -264,4 +302,92 @@ p {
   align-items: center;
   justify-content: space-between;
   padding: 20px;
+}
+.categories {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.categories > button {
+  margin-bottom: 20px;
+}
+.categories .c {
+  align-self: center;
+  margin-top: 50px;
+}
+
+.category-item {
+  height: 202px;
+  width: 202px;
+  box-shadow: -1px 3px 11px 4px rgba(0, 0, 0, 0.2);
+  -webkit-box-shadow: -1px 3px 11px 4px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: -1px 3px 11px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.newsletter {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: #eef0f6;
+  border-radius: 20px;
+  height: 245px;
+  overflow: hidden;
+}
+.newsletter-info-box {
+  width: 75%;
+  height: 100%;
+  background-color: #ff9900;
+  -webkit-clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+          clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+  position: relative;
+}
+.newsletter-info {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.newsletter-info h2 {
+  margin-bottom: 5px;
+}
+.newsletter-info p {
+  margin-bottom: 20px;
+  color: white;
+  font-size: 16px;
+}
+.newsletter-info-input {
+  background-color: white;
+  height: 56px;
+  width: 482px;
+  display: flex;
+  justify-content: space-between;
+  border-radius: 50px;
+  padding-block: 2px;
+}
+.newsletter-info-input input {
+  display: flex;
+  padding-left: 20px;
+  border-radius: 50px;
+  border: none;
+  width: 80%;
+  align-items: center;
+}
+.newsletter-info-input button {
+  margin-right: 2px;
+  border: none;
+  padding: 0 20px;
+  background-color: #ff9900;
+  color: white;
+  border-top-right-radius: 50px;
+  border-bottom-right-radius: 50px;
+}
+.newsletter-img {
+  width: 50%;
+  z-index: 999;
 }/*# sourceMappingURL=main.css.map */

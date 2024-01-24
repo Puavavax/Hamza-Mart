@@ -1,6 +1,6 @@
 @use "../base/" as *;
 .flash-sale {
-  margin-top: 50px;
+  margin-block: 100px;
   &_title-box {
     display: flex;
     justify-content: space-between;
@@ -52,5 +52,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
+  }
+}
+
+.featured {
+  margin-top: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+
+  & > button {
+    margin-bottom: 20px;
+  }
+
+  & .c {
+    align-self: center;
   }
 }

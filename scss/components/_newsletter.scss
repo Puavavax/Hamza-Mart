@@ -1,0 +1,72 @@
+@use "../base/" as *;
+.newsletter {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: space-between;
+  background-color: $off-white;
+  border-radius: 20px;
+  //   padding: 0 100px;
+  height: 245px;
+  overflow: hidden;
+
+  &-info-box {
+    width: 75%;
+    height: 100%;
+    background-color: $primary;
+    clip-path: polygon(0 0, 80% 0, 100% 100%, 0% 100%);
+    position: relative;
+  }
+
+  &-info {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    & h2 {
+      margin-bottom: 5px;
+    }
+
+    & p {
+      margin-bottom: 20px;
+      color: $white;
+      font-size: 16px;
+    }
+
+    &-input {
+      background-color: $white;
+      height: 56px;
+      width: 482px;
+      display: flex;
+      justify-content: space-between;
+      border-radius: 50px;
+      padding-block: 2px;
+
+      & input {
+        display: flex;
+        padding-left: 20px;
+        border-radius: 50px;
+        border: none;
+        width: 80%;
+        align-items: center;
+      }
+
+      & button {
+        margin-right: 2px;
+        border: none;
+        padding: 0 20px;
+        background-color: $primary;
+        color: $white;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+      }
+    }
+  }
+
+  &-img {
+    width: 50%;
+    // background-color: black;
+    z-index: 999;
+  }
+}
