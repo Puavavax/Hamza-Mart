@@ -1,0 +1,36 @@
+@use "../base/" as *;
+.brands {
+  margin-block: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  & button {
+    margin-bottom: 30px;
+  }
+  & .c {
+    align-self: center;
+    margin-top: 50px;
+  }
+
+  &-items {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  &-wrapper {
+    background-color: $white;
+    height: 90px;
+    width: 202px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: -1px 3px 11px 4px rgba(0, 0, 0, 0.2);
+
+    -webkit-box-shadow: -1px 3px 11px 4px rgba(0, 0, 0, 0.2);
+
+    -moz-box-shadow: -1px 3px 11px 4px rgba(0, 0, 0, 0.2);
+    border-radius: 20px;
+  }
+}

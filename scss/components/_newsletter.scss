@@ -70,3 +70,8 @@
     z-index: 999;
   }
 }
+
+.reverse {
+  flex-direction: row-reverse;
+  text-align: start;
+}

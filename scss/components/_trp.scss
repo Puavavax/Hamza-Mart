@@ -1,0 +1,18 @@
+@use "../base/" as *;
+.trp-items {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-between;
+}
+
+.trp-item {
+  background-color: $trp;
+  border-radius: 20px;
+  height: 220px;
+  width: 427px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-inline: 40px;
+}
